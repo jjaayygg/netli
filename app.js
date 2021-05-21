@@ -1,7 +1,9 @@
 const express = require('express')
 const app = express()
-app.listen(900,()=>{console.log('listening on port 900')})
-req.get('/here',(res,res)=>{
+const port = process.env.PORT || 900
+
+app.listen(port,()=>{console.log('listening on port'+port)})
+req.get('/',(res,res)=>{
   res.send('here is the fucking text')
 })
 
