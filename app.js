@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = process.env.PORT || 900
+const port = process.env.PORT 
 
 app.listen(port,()=>{console.log('listening on port'+port)})
 app.get('/',(req,res)=>{
